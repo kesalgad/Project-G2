@@ -7,11 +7,9 @@ from ui import *
 class AppInventario(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = Ui_MainWindow()
+        self.ui = Ui_SistemaGestionInventarios()
         self.ui.setupUi(self)
         self.show()
-
-        self.ui.pushButton.clicked.connect(self.animate)
 
         # Mapeo de los botones a las páginas *"lambda" es una función anónima
         self.ui.pushButton_inicio.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(0))
