@@ -1,8 +1,8 @@
 import sys
 from ui import *
-#from PySide6 import QTCore
-#from PySide6.QtCore import QPropertyAnimation
-#from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6 import QTCore
+from PySide6.QtCore import QPropertyAnimation
+from PySide6 import QtCore, QtWidgets, QtGui
 
 class AppInventario(QMainWindow):
     def __init__(self):
