@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'v2-mainSonGup.ui'
+## Form generated from reading UI file 'v2-mainBxMvLj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(734, 660)
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        MainWindow.setFont(font)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -45,9 +48,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.label_31 = QLabel(self.TOPframe)
         self.label_31.setObjectName(u"label_31")
-        font = QFont()
-        font.setPointSize(15)
-        self.label_31.setFont(font)
+        font1 = QFont()
+        font1.setFamilies([u"Segoe UI"])
+        font1.setPointSize(15)
+        self.label_31.setFont(font1)
         self.label_31.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_31.setAlignment(Qt.AlignCenter)
 
@@ -68,9 +72,10 @@ class Ui_MainWindow(object):
         self.frame_lateral.setObjectName(u"frame_lateral")
         self.frame_lateral.setMinimumSize(QSize(200, 0))
         self.frame_lateral.setMaximumSize(QSize(200, 16777215))
-        font1 = QFont()
-        font1.setPointSize(12)
-        self.frame_lateral.setFont(font1)
+        font2 = QFont()
+        font2.setFamilies([u"Segoe UI"])
+        font2.setPointSize(12)
+        self.frame_lateral.setFont(font2)
         self.frame_lateral.setStyleSheet(u"QFrame{\n"
 "background-color: #2b4865;\n"
 "}\n"
@@ -94,12 +99,13 @@ class Ui_MainWindow(object):
         self.pushButton_inicio.setObjectName(u"pushButton_inicio")
         self.pushButton_inicio.setMinimumSize(QSize(0, 40))
         self.pushButton_inicio.setMaximumSize(QSize(16777215, 40))
-        font2 = QFont()
-        font2.setPointSize(14)
-        self.pushButton_inicio.setFont(font2)
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI"])
+        font3.setPointSize(14)
+        self.pushButton_inicio.setFont(font3)
         self.pushButton_inicio.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon = QIcon()
-        icon.addFile(u"../7c7969d2/home-5801.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"home-5801.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_inicio.setIcon(icon)
         self.pushButton_inicio.setIconSize(QSize(32, 32))
 
@@ -109,10 +115,10 @@ class Ui_MainWindow(object):
         self.pushButton_inv.setObjectName(u"pushButton_inv")
         self.pushButton_inv.setMinimumSize(QSize(0, 40))
         self.pushButton_inv.setMaximumSize(QSize(16777215, 40))
-        self.pushButton_inv.setFont(font2)
+        self.pushButton_inv.setFont(font3)
         self.pushButton_inv.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon1 = QIcon()
-        icon1.addFile(u"../c1b3981b/basket-5855.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"basket-5855.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_inv.setIcon(icon1)
         self.pushButton_inv.setIconSize(QSize(32, 32))
         self.pushButton_inv.setFlat(False)
@@ -123,10 +129,10 @@ class Ui_MainWindow(object):
         self.pushButton_bod.setObjectName(u"pushButton_bod")
         self.pushButton_bod.setMinimumSize(QSize(0, 40))
         self.pushButton_bod.setMaximumSize(QSize(16777215, 40))
-        self.pushButton_bod.setFont(font2)
+        self.pushButton_bod.setFont(font3)
         self.pushButton_bod.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon2 = QIcon()
-        icon2.addFile(u"../7f6c7a9e/store-5853.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"store-5853.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_bod.setIcon(icon2)
         self.pushButton_bod.setIconSize(QSize(32, 32))
 
@@ -136,10 +142,10 @@ class Ui_MainWindow(object):
         self.pushButton_dist.setObjectName(u"pushButton_dist")
         self.pushButton_dist.setMinimumSize(QSize(0, 40))
         self.pushButton_dist.setMaximumSize(QSize(16777215, 40))
-        self.pushButton_dist.setFont(font2)
+        self.pushButton_dist.setFont(font3)
         self.pushButton_dist.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon3 = QIcon()
-        icon3.addFile(u"../a9d8ba0a/delivery-truck-5852.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"delivery-truck-5852.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_dist.setIcon(icon3)
         self.pushButton_dist.setIconSize(QSize(32, 32))
 
@@ -149,10 +155,10 @@ class Ui_MainWindow(object):
         self.pushButton_ent.setObjectName(u"pushButton_ent")
         self.pushButton_ent.setMinimumSize(QSize(0, 40))
         self.pushButton_ent.setMaximumSize(QSize(16777215, 40))
-        self.pushButton_ent.setFont(font2)
+        self.pushButton_ent.setFont(font3)
         self.pushButton_ent.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon4 = QIcon()
-        icon4.addFile(u"../f069b90d/delivery-5851.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"delivery-5851.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_ent.setIcon(icon4)
         self.pushButton_ent.setIconSize(QSize(32, 32))
 
@@ -162,10 +168,10 @@ class Ui_MainWindow(object):
         self.pushButton_rep.setObjectName(u"pushButton_rep")
         self.pushButton_rep.setMinimumSize(QSize(0, 40))
         self.pushButton_rep.setMaximumSize(QSize(16777215, 40))
-        self.pushButton_rep.setFont(font2)
+        self.pushButton_rep.setFont(font3)
         self.pushButton_rep.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon5 = QIcon()
-        icon5.addFile(u"../9f18e30c/documents-5773.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"documents-5773.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_rep.setIcon(icon5)
         self.pushButton_rep.setIconSize(QSize(32, 32))
 
@@ -177,9 +183,10 @@ class Ui_MainWindow(object):
 
         self.label = QLabel(self.frame_lateral)
         self.label.setObjectName(u"label")
-        font3 = QFont()
-        font3.setPointSize(9)
-        self.label.setFont(font3)
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setPointSize(9)
+        self.label.setFont(font4)
         self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label.setAlignment(Qt.AlignCenter)
 
@@ -199,31 +206,36 @@ class Ui_MainWindow(object):
         self.stackedWidget = QStackedWidget(self.frame_container)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setMaximumSize(QSize(16777215, 450))
+        self.stackedWidget.setFont(font)
         self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.INICIO = QWidget()
         self.INICIO.setObjectName(u"INICIO")
+        self.INICIO.setFont(font)
         self.label_29 = QLabel(self.INICIO)
         self.label_29.setObjectName(u"label_29")
         self.label_29.setGeometry(QRect(70, 120, 381, 328))
-        self.label_29.setPixmap(QPixmap(u"../69c2335f/warehouse-pngrepo-com.png"))
+        self.label_29.setFont(font)
+        self.label_29.setPixmap(QPixmap(u"warehouse-pngrepo-com.png"))
         self.label_29.setScaledContents(True)
         self.label_30 = QLabel(self.INICIO)
         self.label_30.setObjectName(u"label_30")
         self.label_30.setGeometry(QRect(9, 9, 105, 22))
-        self.label_30.setFont(font2)
+        self.label_30.setFont(font3)
         self.textBrowser = QTextBrowser(self.INICIO)
         self.textBrowser.setObjectName(u"textBrowser")
         self.textBrowser.setGeometry(QRect(9, 37, 512, 70))
+        self.textBrowser.setFont(font)
         self.stackedWidget.addWidget(self.INICIO)
         self.Inventarios = QWidget()
         self.Inventarios.setObjectName(u"Inventarios")
+        self.Inventarios.setFont(font)
         self.gridLayout_12 = QGridLayout(self.Inventarios)
         self.gridLayout_12.setObjectName(u"gridLayout_12")
         self.gridLayout_4 = QGridLayout()
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.label_2 = QLabel(self.Inventarios)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setFont(font2)
+        self.label_2.setFont(font3)
         self.label_2.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_4.addWidget(self.label_2, 0, 0, 1, 1)
@@ -232,7 +244,7 @@ class Ui_MainWindow(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.label_3 = QLabel(self.Inventarios)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font1)
+        self.label_3.setFont(font2)
 
         self.gridLayout.addWidget(self.label_3, 0, 0, 1, 1)
 
@@ -248,12 +260,13 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setFont(font)
 
         self.gridLayout.addWidget(self.comboBox, 0, 1, 1, 1)
 
         self.label_4 = QLabel(self.Inventarios)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font1)
+        self.label_4.setFont(font2)
 
         self.gridLayout.addWidget(self.label_4, 1, 0, 1, 1)
 
@@ -269,23 +282,25 @@ class Ui_MainWindow(object):
         self.comboBox_2.addItem("")
         self.comboBox_2.addItem("")
         self.comboBox_2.setObjectName(u"comboBox_2")
+        self.comboBox_2.setFont(font)
 
         self.gridLayout.addWidget(self.comboBox_2, 1, 1, 1, 1)
 
         self.label_5 = QLabel(self.Inventarios)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setFont(font1)
+        self.label_5.setFont(font2)
 
         self.gridLayout.addWidget(self.label_5, 2, 0, 1, 1)
 
         self.spinBox = QSpinBox(self.Inventarios)
         self.spinBox.setObjectName(u"spinBox")
+        self.spinBox.setFont(font)
 
         self.gridLayout.addWidget(self.spinBox, 2, 1, 1, 1)
 
         self.label_12 = QLabel(self.Inventarios)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setFont(font1)
+        self.label_12.setFont(font2)
 
         self.gridLayout.addWidget(self.label_12, 3, 0, 1, 1)
 
@@ -300,11 +315,13 @@ class Ui_MainWindow(object):
         self.comboBox_5.addItem("")
         self.comboBox_5.addItem("")
         self.comboBox_5.setObjectName(u"comboBox_5")
+        self.comboBox_5.setFont(font)
 
         self.gridLayout.addWidget(self.comboBox_5, 3, 1, 1, 1)
 
         self.pushButton_2 = QPushButton(self.Inventarios)
         self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setFont(font)
 
         self.gridLayout.addWidget(self.pushButton_2, 4, 0, 1, 2)
 
@@ -318,7 +335,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.label_13 = QLabel(self.Inventarios)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setFont(font2)
+        self.label_13.setFont(font3)
         self.label_13.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_3.addWidget(self.label_13, 0, 0, 1, 1)
@@ -327,7 +344,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.label_14 = QLabel(self.Inventarios)
         self.label_14.setObjectName(u"label_14")
-        self.label_14.setFont(font1)
+        self.label_14.setFont(font2)
 
         self.gridLayout_2.addWidget(self.label_14, 0, 0, 1, 1)
 
@@ -343,12 +360,13 @@ class Ui_MainWindow(object):
         self.comboBox_6.addItem("")
         self.comboBox_6.addItem("")
         self.comboBox_6.setObjectName(u"comboBox_6")
+        self.comboBox_6.setFont(font)
 
         self.gridLayout_2.addWidget(self.comboBox_6, 0, 1, 1, 1)
 
         self.label_15 = QLabel(self.Inventarios)
         self.label_15.setObjectName(u"label_15")
-        self.label_15.setFont(font1)
+        self.label_15.setFont(font2)
 
         self.gridLayout_2.addWidget(self.label_15, 1, 0, 1, 1)
 
@@ -363,22 +381,25 @@ class Ui_MainWindow(object):
         self.comboBox_7.addItem("")
         self.comboBox_7.addItem("")
         self.comboBox_7.setObjectName(u"comboBox_7")
+        self.comboBox_7.setFont(font)
 
         self.gridLayout_2.addWidget(self.comboBox_7, 1, 1, 1, 1)
 
         self.label_16 = QLabel(self.Inventarios)
         self.label_16.setObjectName(u"label_16")
-        self.label_16.setFont(font1)
+        self.label_16.setFont(font2)
 
         self.gridLayout_2.addWidget(self.label_16, 2, 0, 1, 1)
 
         self.spinBox_2 = QSpinBox(self.Inventarios)
         self.spinBox_2.setObjectName(u"spinBox_2")
+        self.spinBox_2.setFont(font)
 
         self.gridLayout_2.addWidget(self.spinBox_2, 2, 1, 1, 1)
 
         self.pushButton_3 = QPushButton(self.Inventarios)
         self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setFont(font)
 
         self.gridLayout_2.addWidget(self.pushButton_3, 3, 0, 1, 2)
 
@@ -391,13 +412,16 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.Inventarios)
         self.Bodegas = QWidget()
         self.Bodegas.setObjectName(u"Bodegas")
+        self.Bodegas.setFont(font)
         self.gridLayout_13 = QGridLayout(self.Bodegas)
         self.gridLayout_13.setObjectName(u"gridLayout_13")
         self.gridLayout_6 = QGridLayout()
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.label_6 = QLabel(self.Bodegas)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setFont(font2)
+        font5 = QFont()
+        font5.setPointSize(14)
+        self.label_6.setFont(font5)
         self.label_6.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_6.addWidget(self.label_6, 0, 0, 1, 1)
@@ -406,7 +430,9 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.label_7 = QLabel(self.Bodegas)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setFont(font1)
+        font6 = QFont()
+        font6.setPointSize(12)
+        self.label_7.setFont(font6)
 
         self.gridLayout_5.addWidget(self.label_7, 0, 0, 1, 1)
 
@@ -421,12 +447,13 @@ class Ui_MainWindow(object):
         self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
         self.comboBox_3.setObjectName(u"comboBox_3")
+        self.comboBox_3.setFont(font)
 
         self.gridLayout_5.addWidget(self.comboBox_3, 0, 1, 1, 1)
 
         self.label_8 = QLabel(self.Bodegas)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setFont(font1)
+        self.label_8.setFont(font6)
 
         self.gridLayout_5.addWidget(self.label_8, 1, 0, 1, 1)
 
@@ -439,12 +466,13 @@ class Ui_MainWindow(object):
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
         self.comboBox_4.setObjectName(u"comboBox_4")
+        self.comboBox_4.setFont(font)
 
         self.gridLayout_5.addWidget(self.comboBox_4, 1, 1, 1, 1)
 
         self.label_9 = QLabel(self.Bodegas)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setFont(font1)
+        self.label_9.setFont(font6)
 
         self.gridLayout_5.addWidget(self.label_9, 2, 0, 1, 1)
 
@@ -455,7 +483,7 @@ class Ui_MainWindow(object):
 
         self.label_10 = QLabel(self.Bodegas)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setFont(font1)
+        self.label_10.setFont(font2)
 
         self.gridLayout_5.addWidget(self.label_10, 3, 0, 1, 1)
 
@@ -466,7 +494,7 @@ class Ui_MainWindow(object):
 
         self.label_11 = QLabel(self.Bodegas)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setFont(font1)
+        self.label_11.setFont(font6)
 
         self.gridLayout_5.addWidget(self.label_11, 4, 0, 1, 1)
 
@@ -495,7 +523,7 @@ class Ui_MainWindow(object):
         self.gridLayout_8.setObjectName(u"gridLayout_8")
         self.label_17 = QLabel(self.Distribuidores)
         self.label_17.setObjectName(u"label_17")
-        self.label_17.setFont(font2)
+        self.label_17.setFont(font5)
         self.label_17.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_8.addWidget(self.label_17, 0, 0, 1, 1)
@@ -504,7 +532,7 @@ class Ui_MainWindow(object):
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.label_32 = QLabel(self.Distribuidores)
         self.label_32.setObjectName(u"label_32")
-        self.label_32.setFont(font1)
+        self.label_32.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_32, 0, 0, 1, 1)
 
@@ -515,7 +543,7 @@ class Ui_MainWindow(object):
 
         self.label_19 = QLabel(self.Distribuidores)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setFont(font1)
+        self.label_19.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_19, 1, 0, 1, 2)
 
@@ -526,7 +554,7 @@ class Ui_MainWindow(object):
 
         self.label_20 = QLabel(self.Distribuidores)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setFont(font1)
+        self.label_20.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_20, 2, 0, 1, 2)
 
@@ -540,7 +568,7 @@ class Ui_MainWindow(object):
 
         self.label_21 = QLabel(self.Distribuidores)
         self.label_21.setObjectName(u"label_21")
-        self.label_21.setFont(font1)
+        self.label_21.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_21, 3, 0, 1, 2)
 
@@ -551,7 +579,7 @@ class Ui_MainWindow(object):
 
         self.label_22 = QLabel(self.Distribuidores)
         self.label_22.setObjectName(u"label_22")
-        self.label_22.setFont(font1)
+        self.label_22.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_22, 4, 0, 1, 2)
 
@@ -562,7 +590,7 @@ class Ui_MainWindow(object):
 
         self.label_23 = QLabel(self.Distribuidores)
         self.label_23.setObjectName(u"label_23")
-        self.label_23.setFont(font1)
+        self.label_23.setFont(font6)
 
         self.gridLayout_7.addWidget(self.label_23, 5, 0, 1, 2)
 
@@ -591,7 +619,7 @@ class Ui_MainWindow(object):
         self.gridLayout_10.setObjectName(u"gridLayout_10")
         self.label_24 = QLabel(self.Entregas)
         self.label_24.setObjectName(u"label_24")
-        self.label_24.setFont(font2)
+        self.label_24.setFont(font5)
         self.label_24.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_10.addWidget(self.label_24, 0, 0, 1, 1)
@@ -600,7 +628,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.setObjectName(u"gridLayout_9")
         self.label_25 = QLabel(self.Entregas)
         self.label_25.setObjectName(u"label_25")
-        self.label_25.setFont(font1)
+        self.label_25.setFont(font6)
 
         self.gridLayout_9.addWidget(self.label_25, 0, 0, 1, 1)
 
@@ -621,7 +649,7 @@ class Ui_MainWindow(object):
 
         self.label_26 = QLabel(self.Entregas)
         self.label_26.setObjectName(u"label_26")
-        self.label_26.setFont(font1)
+        self.label_26.setFont(font6)
 
         self.gridLayout_9.addWidget(self.label_26, 1, 0, 1, 1)
 
@@ -632,7 +660,7 @@ class Ui_MainWindow(object):
 
         self.label_27 = QLabel(self.Entregas)
         self.label_27.setObjectName(u"label_27")
-        self.label_27.setFont(font1)
+        self.label_27.setFont(font6)
 
         self.gridLayout_9.addWidget(self.label_27, 2, 0, 1, 1)
 
@@ -643,7 +671,7 @@ class Ui_MainWindow(object):
 
         self.label_28 = QLabel(self.Entregas)
         self.label_28.setObjectName(u"label_28")
-        self.label_28.setFont(font1)
+        self.label_28.setFont(font6)
 
         self.gridLayout_9.addWidget(self.label_28, 3, 0, 1, 1)
 
@@ -670,7 +698,9 @@ class Ui_MainWindow(object):
         self.gridLayout_11.setObjectName(u"gridLayout_11")
         self.pushButton_6 = QPushButton(self.Reportes)
         self.pushButton_6.setObjectName(u"pushButton_6")
-        self.pushButton_6.setFont(font)
+        font7 = QFont()
+        font7.setPointSize(15)
+        self.pushButton_6.setFont(font7)
 
         self.gridLayout_11.addWidget(self.pushButton_6, 0, 0, 1, 1)
 
@@ -712,13 +742,13 @@ class Ui_MainWindow(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">* M\u00f3dulo de Inventarios permite ingresar unidades de stock y consultar stock disponible por bodega.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">* M\u00f3dulo de Bodegas permite registrar nuevas b\u00f3degas.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:"
-                        "0; text-indent:0px;\">* M\u00f3dulo de Distribuidores permite crear nuevos perfiles de distribuidores.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">* M\u00f3dulo de Entregas permite registrar entregas por c\u00f3digo de producto, distribuidor y fecha.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">* M\u00f3dulo de Reportes genera un .txt con todas las entregas realizadas a cada distribuidor en determinadas fechas.</p></body></html>", None))
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Inventarios permite ingresar unidades de stock y consultar stock disponible por bodega.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Bodegas permite registrar nuevas b\u00f3"
+                        "degas.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Distribuidores permite crear nuevos perfiles de distribuidores.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Entregas permite registrar entregas por c\u00f3digo de producto, distribuidor y fecha.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Reportes genera un .txt con todas las entregas realizadas a cada distribuidor en determinadas fechas.</span></p></body></html>", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Registro de Art\u00edculos", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"C\u00f3d. Producto", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"NR 0089", None))
