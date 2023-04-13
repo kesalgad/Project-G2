@@ -3,7 +3,7 @@ import sqlite3
 
 class SQLite:
     def __init__(self):
-        self.conn = sqlite3.connect('C:\Users\kevsa\Documents\Project-G2\AppInventario.db')
+        self.conn = sqlite3.connect("AppInventario.db")
         self.cursor = self.conn.cursor()
     
     def create_table(self):
