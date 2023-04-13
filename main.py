@@ -1,4 +1,5 @@
 import sys
+from JSONStorage import JSONStorage
 from ui import *
 from sqlite3 import *
 from PySide6 import QtCore, QtWidgets, QtGui
@@ -17,6 +18,11 @@ class AppInventario(QMainWindow):
         self.ui.pushButton_dist.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(3))
         self.ui.pushButton_ent.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(4))
         self.ui.pushButton_rep.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(5))
+
+        #self.storage = JSONStorage("inventarios.json")
+        #data = self.storage.read()
+        #return data
+        #self.storage.write(data)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -1,0 +1,25 @@
+{
+    "inventarios": [
+        {
+            "id": 1,
+            "codProducto": "PROD001",
+            "descripcion": "Producto 1",
+            "unidades": 10,
+            "codBodega": "BOD001"
+        },
+        {
+            "id": 2,
+            "codProducto": "PROD002",
+            "descripcion": "Producto 2",
+            "unidades": 5,
+            "codBodega": "BOD002"
+        },
+        {
+            "id": 3,
+            "codProducto": "PROD003",
+            "descripcion": "Producto 3",
+            "unidades": 20,
+            "codBodega": "BOD001"
+        }
+    ]
+}
