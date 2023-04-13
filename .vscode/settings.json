@@ -1,4 +1,12 @@
 {
     "python.analysis.typeCheckingMode": "off",
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "AppInventario",
+            "database": "${workspaceFolder:Project-G2}/AppInventario.db"
+        }
+    ]
 }
