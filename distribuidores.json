@@ -1,0 +1,22 @@
+{
+    "distribuidores": [
+        {
+            "id": 1,
+            "Empresa": "Distribuidora Lopez",
+            "cedJuridica": "3101556688",
+            "Zona": "GAM",
+            "Direccion": "Lagunilla de Heredia, Ultraparrk II",
+            "telefono": "22335566",
+            "email": "recepcion@dlopez.co.cr"
+        },
+        {
+            "id": 2,
+            "Empresa": "DistriMueble",
+            "cedJuridica": "3101995544",
+            "Zona": "NORTE",
+            "Direccion": "Liberia, Zona Franca",
+            "telefono": "22775544",
+            "email": "info@distrimueble.com"
+        }        
+    ]
+}

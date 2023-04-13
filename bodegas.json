@@ -1,0 +1,20 @@
+{
+    "bodegas": [
+        {
+            "id": 1,
+            "codBodega": "B 001",
+            "provincia": "San Jose",
+            "canton": "Moravia",
+            "gerente": "Luis Mora",
+            "telefono": "22335566"
+        },
+        {
+            "id": 2,
+            "codBodega": "B 002",
+            "provincia": "Heredia",
+            "canton": "Ulloa",
+            "gerente": "Pedro Navaja",
+            "telefono": "22554433"
+        }        
+    ]
+}

@@ -2,23 +2,23 @@
     "inventarios": [
         {
             "id": 1,
-            "codProducto": "PROD001",
-            "descripcion": "Producto 1",
+            "codProducto": "NR 0089",
+            "descripcion": "Silla Oficina Basica",
             "unidades": 10,
-            "codBodega": "BOD001"
+            "codBodega": "B001"
         },
         {
             "id": 2,
-            "codProducto": "PROD002",
-            "descripcion": "Producto 2",
+            "codProducto": "NR 0090",
+            "descripcion": "Silla Oficina Premium",
             "unidades": 5,
-            "codBodega": "BOD002"
+            "codBodega": "B002"
         },
         {
             "id": 3,
-            "codProducto": "PROD003",
-            "descripcion": "Producto 3",
-            "unidades": 20,
+            "codProducto": "NR 0091",
+            "descripcion": "Escritorio de Madera",
+            "unidades": 10,
             "codBodega": "BOD001"
         }
     ]
