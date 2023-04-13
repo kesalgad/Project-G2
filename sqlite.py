@@ -38,5 +38,6 @@ class SQLite:
                             distribuidor TEXT NOT NULL,
                             unidades INTEGER NOT NULL,
                             fechaEntrega TEXT NOT NULL,)""")
-        self.conn.commit()         
+        self.conn.commit()
+        self.conn.close()      
                             
