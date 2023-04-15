@@ -13,13 +13,6 @@
             "descripcion": "Silla Oficina Premium",
             "unidades": 5,
             "codBodega": "B002"
-        },
-        {
-            "id": 3,
-            "codProducto": "NR 0091",
-            "descripcion": "Escritorio de Madera",
-            "unidades": 10,
-            "codBodega": "BOD001"
         }
     ]
 }

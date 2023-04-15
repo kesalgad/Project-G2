@@ -8,45 +8,69 @@ class DataManager:
         self.entregas_file = entregas_file
 
     def read_inventarios(self):
-        with open(self.inventarios_file, 'r') as f:
-            data = json.load(f)
-        return data
+        try:
+            with open(self.inventarios_file, 'r') as f:
+                data = json.load(f)
+            return data
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
+            return {}
 
     def write_inventarios(self, data):
-        with open(self.inventarios_file, 'a') as f:
-            json.dump(data, f, indent=4)
-            f.write('\n')
-        f.close()
+        try:
+            with open(self.inventarios_file, 'a') as f:
+                json.dump(data, f, indent=4)
+                f.write('\n')
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
 
     def read_bodegas(self):
-        with open(self.bodegas_file, 'r') as f:
-            data = json.load(f)
-        return data
+        try:
+            with open(self.bodegas_file, 'r') as f:
+                data = json.load(f)
+            return data
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
+            return {}
 
     def write_bodegas(self, data):
-        with open(self.bodegas_file, 'a') as f:
-            json.dump(data, f, indent=4)
-            f.write('\n')
-        f.close()
+        try:
+            with open(self.bodegas_file, 'a') as f:
+                json.dump(data, f, indent=4)
+                f.write('\n')
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
 
     def read_distribuidores(self):
-        with open(self.distribuidores_file, 'r') as f:
-            data = json.load(f)
-        return data
+        try:
+            with open(self.distribuidores_file, 'r') as f:
+                data = json.load(f)
+            return data
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
+            return {}
 
     def write_distribuidores(self, data):
-        with open(self.distribuidores_file, 'a') as f:
-            json.dump(data, f, indent=4)
-            f.write('\n')
-        f.close()
+        try:
+            with open(self.distribuidores_file, 'a') as f:
+                json.dump(data, f, indent=4)
+                f.write('\n')
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
 
     def read_entregas(self):
-        with open(self.entregas_file, 'r') as f:
-            data = json.load(f)
-        return data
+        try:
+            with open(self.entregas_file, 'r') as f:
+                data = json.load(f)
+            return data
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
+            return {}
 
     def write_entregas(self, data):
-        with open(self.entregas_file, 'a') as f:
-            json.dump(data, f, indent=4)
-            f.write('\n')
-        f.close()
+        try:
+            with open(self.entregas_file, 'a') as f:
+                json.dump(data, f, indent=4)
+                f.write('\n')
+        except FileNotFoundError as e:
+            print(f"Error: {e}")
