@@ -1,3 +1,5 @@
+import json
+
 class DataManager:
     def __init__(self, inventarios_file, bodegas_file, distribuidores_file, entregas_file):
         self.inventarios_file = inventarios_file
@@ -6,33 +8,45 @@ class DataManager:
         self.entregas_file = entregas_file
 
     def read_inventarios(self):
-        # implementation of read_inventarios method
-        pass
+        with open(self.inventarios_file, 'r') as f:
+            data = json.load(f)
+        return data
 
     def write_inventarios(self, data):
-        # implementation of write_inventarios method
-        pass
+        with open(self.inventarios_file, 'a') as f:
+            json.dump(data, f, indent=4)
+            f.write('\n')
+        f.close()
 
     def read_bodegas(self):
-        # implementation of read_bodegas method
-        pass
+        with open(self.bodegas_file, 'r') as f:
+            data = json.load(f)
+        return data
 
     def write_bodegas(self, data):
-        # implementation of write_bodegas method
-        pass
+        with open(self.bodegas_file, 'a') as f:
+            json.dump(data, f, indent=4)
+            f.write('\n')
+        f.close()
 
     def read_distribuidores(self):
-        # implementation of read_distribuidores method
-        pass
+        with open(self.distribuidores_file, 'r') as f:
+            data = json.load(f)
+        return data
 
     def write_distribuidores(self, data):
-        # implementation of write_distribuidores method
-        pass
+        with open(self.distribuidores_file, 'a') as f:
+            json.dump(data, f, indent=4)
+            f.write('\n')
+        f.close()
 
     def read_entregas(self):
-        # implementation of read_entregas method
-        pass
+        with open(self.entregas_file, 'r') as f:
+            data = json.load(f)
+        return data
 
     def write_entregas(self, data):
-        # implementation of write_entregas method
-        pass
+        with open(self.entregas_file, 'a') as f:
+            json.dump(data, f, indent=4)
+            f.write('\n')
+        f.close()
