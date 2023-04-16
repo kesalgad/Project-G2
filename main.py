@@ -1,8 +1,8 @@
 import sys
 from ui import *
 from PySide6 import QtCore, QtWidgets, QtGui
-from DataManager import DataManager
-from InventoryItem import InventoryItemUI
+from Unused_Files.DataManager import DataManager
+from InventoryItem import *
 
 
 
