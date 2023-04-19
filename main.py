@@ -2,6 +2,7 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from ui import Ui_SistemaGestionInventarios
 from Inventarios import RegistroInventarios, ConsultaInventarios
+from Bodegas import CrearBodega
 
 
 class AppInventario(QMainWindow):
@@ -14,6 +15,7 @@ class AppInventario(QMainWindow):
         # Instantiate the inventory classes
         self.registro_inventarios = RegistroInventarios(self.ui)
         self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
+        self.crear_bodega = CrearBodega(self.ui)
 
         self.show()
 
@@ -25,6 +27,13 @@ class AppInventario(QMainWindow):
         self.ui.pushButton_ent.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(4))
         self.ui.pushButton_rep.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(5))
 
+    def show_bodega_page(self):
+        # Clear input fields
+        self.ui.comboBox_3.setCurrentIndex(0)
+        self.ui.comboBox_4.setCurrentIndex(0)
+        self.ui.lineEdit_3.clear()
+        self.ui.lineEdit.clear()
+        self.ui.lineEdit_2.clear()
 
 
 if __name__ == "__main__":
