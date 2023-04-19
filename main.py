@@ -1,7 +1,7 @@
 import sys
-from ui import *
-from PySide6 import QtCore, QtWidgets, QtGui
-
+from PySide6.QtWidgets import QApplication, QMainWindow
+from ui import Ui_SistemaGestionInventarios
+from Inventarios import RegistroInventarios, ConsultaInventarios
 
 
 class AppInventario(QMainWindow):
@@ -10,6 +10,10 @@ class AppInventario(QMainWindow):
 
         self.ui = Ui_SistemaGestionInventarios()
         self.ui.setupUi(self)
+
+        # Instantiate the inventory classes
+        self.registro_inventarios = RegistroInventarios(self.ui)
+        self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
 
         # Mapeo de los botones a las páginas *"lambda" es una función anónima
         self.ui.pushButton_inicio.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(0))
