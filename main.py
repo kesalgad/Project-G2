@@ -15,6 +15,8 @@ class AppInventario(QMainWindow):
         self.registro_inventarios = RegistroInventarios(self.ui)
         self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
 
+        self.show()
+
         # Mapeo de los botones a las páginas *"lambda" es una función anónima
         self.ui.pushButton_inicio.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(0))
         self.ui.pushButton_inv.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(1))
@@ -22,6 +24,7 @@ class AppInventario(QMainWindow):
         self.ui.pushButton_dist.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(3))
         self.ui.pushButton_ent.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(4))
         self.ui.pushButton_rep.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(5))
+
 
 
 if __name__ == "__main__":

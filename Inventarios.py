@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QWidget, QLabel, QComboBox, QSpinBox, QPushButton, QVBoxLayout, QHBoxLayout
 from ui import *
-
+from PySide6.QtGui import QFont
 
 class RegistroInventarios:
     def __init__(self, ui):
