@@ -44,3 +44,6 @@ class CrearBodega:
         # Append the dictionary to the list of inventory data
         self.bodegas_data.append(bodega_item)    
         
+        # Replace this with your own code to store the data in a database or file
+        print(bodega_item)
+        
