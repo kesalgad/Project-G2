@@ -27,7 +27,7 @@ class Ui_SistemaGestionInventarios(object):
             SistemaGestionInventarios.setObjectName(u"SistemaGestionInventarios")
         SistemaGestionInventarios.resize(734, 660)
         font = QFont()
-        font.setFamilies([u"Segoe UI"])
+        font.setFamilies([u"Arial"])
         SistemaGestionInventarios.setFont(font)
         self.centralwidget = QWidget(SistemaGestionInventarios)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -49,7 +49,7 @@ class Ui_SistemaGestionInventarios(object):
         self.label_31 = QLabel(self.TOPframe)
         self.label_31.setObjectName(u"label_31")
         font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
+        font1.setFamilies([u"Arial"])
         font1.setPointSize(15)
         self.label_31.setFont(font1)
         self.label_31.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -73,7 +73,7 @@ class Ui_SistemaGestionInventarios(object):
         self.frame_lateral.setMinimumSize(QSize(200, 0))
         self.frame_lateral.setMaximumSize(QSize(200, 16777215))
         font2 = QFont()
-        font2.setFamilies([u"Segoe UI"])
+        font2.setFamilies([u"Arial"])
         font2.setPointSize(12)
         self.frame_lateral.setFont(font2)
         self.frame_lateral.setStyleSheet(u"QFrame{\n"
@@ -100,7 +100,7 @@ class Ui_SistemaGestionInventarios(object):
         self.pushButton_inicio.setMinimumSize(QSize(0, 40))
         self.pushButton_inicio.setMaximumSize(QSize(16777215, 40))
         font3 = QFont()
-        font3.setFamilies([u"Segoe UI"])
+        font3.setFamilies([u"Arial"])
         font3.setPointSize(14)
         self.pushButton_inicio.setFont(font3)
         self.pushButton_inicio.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -184,7 +184,7 @@ class Ui_SistemaGestionInventarios(object):
         self.label = QLabel(self.frame_lateral)
         self.label.setObjectName(u"label")
         font4 = QFont()
-        font4.setFamilies([u"Segoe UI"])
+        font4.setFamilies([u"Arial"])
         font4.setPointSize(9)
         self.label.setFont(font4)
         self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -742,7 +742,7 @@ class Ui_SistemaGestionInventarios(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Inventarios permite ingresar unidades de stock y consultar stock disponible por bodega.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Bodegas permite registrar nuevas b\u00f3"
                         "degas.</span></p>\n"
