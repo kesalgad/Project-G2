@@ -2,7 +2,8 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from ui import Ui_SistemaGestionInventarios
 from Inventarios import RegistroInventarios, ConsultaInventarios
-from Bodegas import CrearBodega
+from Bodegas import *
+from Distribuidores import *
 
 
 class AppInventario(QMainWindow):
@@ -12,10 +13,11 @@ class AppInventario(QMainWindow):
         self.ui = Ui_SistemaGestionInventarios()
         self.ui.setupUi(self)
 
-        # Instantiate the inventory classes
+        # Instantiate classes
         self.registro_inventarios = RegistroInventarios(self.ui)
         self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
         self.crear_bodega = CrearBodega(self.ui)
+        self.crear_distribuidor = PerfilDistribuidor(self.ui)
 
         self.show()
 
