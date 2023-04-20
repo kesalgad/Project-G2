@@ -8,5 +8,6 @@
             "name": "AppInventario",
             "database": "${workspaceFolder:Project-G2}/AppInventario.db"
         }
-    ]
+    ],
+    "appMap.findingsEnabled": true
 }
