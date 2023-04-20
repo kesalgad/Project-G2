@@ -1,12 +1,10 @@
 from PySide6.QtWidgets import QStackedWidget, QFrame, QWidget, QGridLayout, QLabel, QComboBox, QSpinBox, QPushButton, QVBoxLayout, QGridLayout, QLineEdit, QDateEdit
 from PyQt6.QtCore import Qt
 from ui import *
-import csv
-import datetime
 
 class Entregas:
     def __init__(self, ui):
-        # Referenciar elementos del UI
+    # Referenciar elementos del UI
         self.label_24 = ui.label_24    
         self.comboBox_9 = ui.comboBox_9
         self.lineEdit_9 = ui.lineEdit_9
@@ -14,13 +12,10 @@ class Entregas:
         self.lineEdit_10 = ui.lineEdit_10
         self.dateEdit = ui.dateEdit
         self.pushButton_5 = ui.pushButton_5
-        self.pushButton_6 = ui.pushButton_6
+
         
         # Boton para enviar datos
         self.pushButton_5.clicked.connect(self.submit)
-
-        # Boton para generar el reporte
-        self.pushButton_6.clicked.connect(self.generate_report)
 
         # Lista vacia para almacenar datos de entregas
         self.entregas_data = []
@@ -58,48 +53,30 @@ class Entregas:
         
         # Imprimir el total de items entregados por product_code
         print(self.items_entregados)
-    
-    def generate_report(self):
-        # Create a filename with the current date and time
-        now = datetime.datetime.now()
-        filename = f"report_{now.strftime('%Y-%m-%d')}.csv"
-        
-        # Open the file for writing
-        with open(filename, "w", newline="") as f:
-            # Create a CSV writer object
-            writer = csv.writer(f)
-            
-            # Write the header row
-            writer.writerow(["Product Code", "Distribuidor", "Unidades", "Número de rastreo", "Fecha de entrega"])
-            
-            # Write the data rows
-            for entrega in self.entregas_data:
-                writer.writerow([entrega["product_code"], entrega["distribuidor"], entrega["unidades"], entrega["numRastreo"], entrega["fechaEntrega"]])
 
-        
-
+import os
 
 class Reportes:
-    def __init__(self, entregas_data):
+    def __init__(self, entregas_data, ui):
+        # Referenciar elementos del UI
+        self.pushButton_6 = ui.pushButton_6
+        # Boton para enviar datos
+        self.pushButton_6.clicked.connect(self.exportar_a_txt)
+        # Guardar los datos de entregas en una variable de instancia
         self.entregas_data = entregas_data
         
-    def generate_report(self):
-        for entrega in self.entregas_data:
-            print(entrega)
-        # Create a filename with the current date and time
-        import datetime
-        now = datetime.datetime.now()
-        filename = f"report_{now.strftime('%Y-%m-%d')}.csv"
-        
-        # Open the file for writing
-        with open(filename, "w", newline="") as f:
-            # Create a CSV writer object
-            writer = csv.writer(f)
-            
-            # Write the header row
-            writer.writerow(["Product Code", "Distribuidor", "Unidades", "Número de rastreo", "Fecha de entrega"])
-            
-            # Write the data rows
+    def exportar_a_txt(self):
+        # Generar la ruta del archivo de texto en la misma carpeta del script
+        file_path = os.path.join(os.getcwd(), "entregas.txt")
+        # Crear un archivo de texto y escribir los datos de entregas en él
+        with open(file_path, "w") as f:
             for entrega in self.entregas_data:
-                writer.writerow([entrega["product_code"], entrega["distribuidor"], entrega["unidades"], entrega["numRastreo"], entrega["fechaEntrega"]])
+                f.write("Product Code: {}\n".format(entrega["product_code"]))
+                f.write("Distribuidor: {}\n".format(entrega["distribuidor"]))
+                f.write("Unidades: {}\n".format(entrega["unidades"]))
+                f.write("Número de Rastreo: {}\n".format(entrega["numRastreo"]))
+                f.write("Fecha de Entrega: {}\n\n".format(entrega["fechaEntrega"]))
+                
+        # Imprimir mensaje de éxito en consola
+        print("Los datos de entregas han sido exportados a entregas.txt.")
 

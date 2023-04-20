@@ -22,7 +22,8 @@ class AppInventario(QMainWindow):
         self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
         self.crear_bodega = CrearBodega(self.ui)
         self.crear_distribuidor = PerfilDistribuidor(self.ui)
-        self.ingresar_entrega = Entregas(self.ui)
+        self.entregas = Entregas(self.ui)
+        self.reportes = Reportes(self.entregas.entregas_data)
 
         self.show()
 
