@@ -14,10 +14,7 @@ class PerfilDistribuidor:
         self.lineEdit8 = ui.lineEdit_8
         self.pushButton_4 = ui.pushButton_4
         
-        # Set the font size for the title label
-        font = QFont()
-        font.setPointSize(16)
-        self.label_17.setFont(font)
+
         
         # Set up the button click event
         self.pushButton_4.clicked.connect(self.submit)

@@ -13,10 +13,6 @@ class CrearBodega:
         self.label_6 = ui.label_6
         self.pushButton = ui.pushButton
         
-        # Set the font size for the title label
-        font = QFont()
-        font.setPointSize(16)
-        self.label_6.setFont(font)
         
         # Set up the button click event
         self.pushButton.clicked.connect(self.submit)

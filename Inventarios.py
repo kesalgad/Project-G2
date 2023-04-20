@@ -13,10 +13,6 @@ class RegistroInventarios:
         self.pushButton_2 = ui.pushButton_2
         self.label_2 = ui.label_2
 
-        # Set the font size for the title label
-        font = QFont()
-        font.setPointSize(16)
-        self.label_2.setFont(font)
 
         # Set up the button click event
         self.pushButton_2.clicked.connect(self.submit)

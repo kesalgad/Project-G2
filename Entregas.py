@@ -13,10 +13,6 @@ class Entregas:
         self.dateEdit = ui.dateEdit
         self.pushButton_5 = ui.pushButton_5
 
-        # Letra del Label para tirulo
-        font = QFont()
-        font.setPointSize(16)
-        self.label_24.setFont(font)
         
         # Boton para enviar datos
         self.pushButton_5.clicked.connect(self.submit)
@@ -46,7 +42,3 @@ class Entregas:
         
         # Imprimir en consola
         print(entrega_items)
-    
-    
-    
-        
