@@ -19,6 +19,8 @@ class Entregas:
 
         # Lista vacia para almacenar datos de entregas
         self.entregas_data = []
+        # Diccionario para almacenar el total de items entregados por product_code
+        self.items_entregados = {}
 
     def submit(self):
         # Leer los valores ingresados por usuario en GUI
@@ -40,5 +42,14 @@ class Entregas:
         # Append para el diccionario
         self.entregas_data.append(entrega_items)
         
+        # Actualizar el contador de items entregados para el product_code seleccionado
+        if selected_product_code in self.items_entregados:
+            self.items_entregados[selected_product_code] += selected_unidades
+        else:
+            self.items_entregados[selected_product_code] = selected_unidades
+        
         # Imprimir en consola
         print(entrega_items)
+        
+        # Imprimir el total de items entregados por product_code
+        print(self.items_entregados)
