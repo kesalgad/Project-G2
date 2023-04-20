@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QStackedWidget, QFrame, QWidget, QGridLayout, QLabel, QComboBox, QSpinBox, QPushButton, QVBoxLayout, QGridLayout, QLineEdit
 from ui import *
 from PySide6.QtGui import QFont
+from Entregas import *
 
 class RegistroInventarios:
     def __init__(self, ui):
@@ -30,19 +31,27 @@ class RegistroInventarios:
         selected_quantity = self.spinBox.value()
         selected_warehouse_code = self.comboBox_5.currentText()
 
-        # Create a dictionary to store the selected values
-        inventory_item = {
-            "product_code": selected_product_code,
-            "product_description": selected_product_description,
-            "quantity": selected_quantity,
-            "warehouse_code": selected_warehouse_code
-        }
-
-        # Append the dictionary to the list of inventory data
-        self.inventory_data.append(inventory_item)
+        # Check if an inventory item with the same product code and warehouse code already exists
+        for item in self.inventory_data:
+            if item["product_code"] == selected_product_code and item["warehouse_code"] == selected_warehouse_code:
+                # Update the quantity of the existing inventory item
+                item["quantity"] += selected_quantity
+                break
+        else:
+            # If an inventory item with the same product code and warehouse code doesn't exist, create a new one
+            inventory_item = {
+                "product_code": selected_product_code,
+                "product_description": selected_product_description,
+                "quantity": selected_quantity,
+                "warehouse_code": selected_warehouse_code
+            }
+            # Append the new inventory item to the list of inventory data
+            self.inventory_data.append(inventory_item)
 
         # Replace this with your own code to store the data in a database or file
-        print(inventory_item)
+        print(self.inventory_data)
+
+
 
     def get_stock(self, product_code, warehouse_code):
         # Search the inventory data for the product and warehouse
