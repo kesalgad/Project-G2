@@ -5,7 +5,7 @@ from ui import *
 class Entregas:
     def __init__(self, ui):
     # Referenciar elementos del UI
-        self.label_24 = ui.label_6    
+        self.label_24 = ui.label_24    
         self.comboBox_9 = ui.comboBox_9
         self.lineEdit_9 = ui.lineEdit_9
         self.spinBox_3 = ui.spinBox_3
