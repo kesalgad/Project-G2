@@ -2,9 +2,9 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from ui import Ui_SistemaGestionInventarios
 from Inventarios import RegistroInventarios, ConsultaInventarios
-from Bodegas import *
-from Distribuidores import *
-from Entregas import *
+from Bodegas import CrearBodega
+from Distribuidores import PerfilDistribuidor
+from Entregas import Entregas
 
 
 class AppInventario(QMainWindow):
