@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'v2-mainkAadMV.ui'
+## Form generated from reading UI file 'v2-mainuVanAq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -27,7 +27,7 @@ class Ui_SistemaGestionInventarios(object):
             SistemaGestionInventarios.setObjectName(u"SistemaGestionInventarios")
         SistemaGestionInventarios.resize(734, 660)
         font = QFont()
-        font.setFamilies([u"Arial"])
+        font.setFamilies([u"Segoe UI"])
         SistemaGestionInventarios.setFont(font)
         self.centralwidget = QWidget(SistemaGestionInventarios)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -49,7 +49,7 @@ class Ui_SistemaGestionInventarios(object):
         self.label_31 = QLabel(self.TOPframe)
         self.label_31.setObjectName(u"label_31")
         font1 = QFont()
-        font1.setFamilies([u"Arial"])
+        font1.setFamilies([u"Segoe UI"])
         font1.setPointSize(15)
         self.label_31.setFont(font1)
         self.label_31.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -73,7 +73,7 @@ class Ui_SistemaGestionInventarios(object):
         self.frame_lateral.setMinimumSize(QSize(200, 0))
         self.frame_lateral.setMaximumSize(QSize(200, 16777215))
         font2 = QFont()
-        font2.setFamilies([u"Arial"])
+        font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(12)
         self.frame_lateral.setFont(font2)
         self.frame_lateral.setStyleSheet(u"QFrame{\n"
@@ -100,7 +100,7 @@ class Ui_SistemaGestionInventarios(object):
         self.pushButton_inicio.setMinimumSize(QSize(0, 40))
         self.pushButton_inicio.setMaximumSize(QSize(16777215, 40))
         font3 = QFont()
-        font3.setFamilies([u"Arial"])
+        font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(14)
         self.pushButton_inicio.setFont(font3)
         self.pushButton_inicio.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -184,7 +184,7 @@ class Ui_SistemaGestionInventarios(object):
         self.label = QLabel(self.frame_lateral)
         self.label.setObjectName(u"label")
         font4 = QFont()
-        font4.setFamilies([u"Arial"])
+        font4.setFamilies([u"Segoe UI"])
         font4.setPointSize(9)
         self.label.setFont(font4)
         self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -613,24 +613,22 @@ class Ui_SistemaGestionInventarios(object):
         self.stackedWidget.addWidget(self.Distribuidores)
         self.Entregas = QWidget()
         self.Entregas.setObjectName(u"Entregas")
-        self.gridLayout_15 = QGridLayout(self.Entregas)
-        self.gridLayout_15.setObjectName(u"gridLayout_15")
-        self.gridLayout_10 = QGridLayout()
+        self.gridLayout_10 = QGridLayout(self.Entregas)
         self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_9 = QGridLayout()
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
         self.label_24 = QLabel(self.Entregas)
         self.label_24.setObjectName(u"label_24")
         self.label_24.setFont(font5)
         self.label_24.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_10.addWidget(self.label_24, 0, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.label_24, 0, 0, 1, 2)
 
-        self.gridLayout_9 = QGridLayout()
-        self.gridLayout_9.setObjectName(u"gridLayout_9")
         self.label_25 = QLabel(self.Entregas)
         self.label_25.setObjectName(u"label_25")
         self.label_25.setFont(font6)
 
-        self.gridLayout_9.addWidget(self.label_25, 0, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.label_25, 1, 0, 1, 1)
 
         self.comboBox_9 = QComboBox(self.Entregas)
         self.comboBox_9.addItem("")
@@ -645,51 +643,59 @@ class Ui_SistemaGestionInventarios(object):
         self.comboBox_9.addItem("")
         self.comboBox_9.setObjectName(u"comboBox_9")
 
-        self.gridLayout_9.addWidget(self.comboBox_9, 0, 1, 1, 1)
+        self.gridLayout_9.addWidget(self.comboBox_9, 1, 1, 1, 1)
 
         self.label_26 = QLabel(self.Entregas)
         self.label_26.setObjectName(u"label_26")
         self.label_26.setFont(font6)
 
-        self.gridLayout_9.addWidget(self.label_26, 1, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.label_26, 2, 0, 1, 1)
 
         self.lineEdit_9 = QLineEdit(self.Entregas)
         self.lineEdit_9.setObjectName(u"lineEdit_9")
 
-        self.gridLayout_9.addWidget(self.lineEdit_9, 1, 1, 1, 1)
+        self.gridLayout_9.addWidget(self.lineEdit_9, 2, 1, 1, 1)
 
         self.label_27 = QLabel(self.Entregas)
         self.label_27.setObjectName(u"label_27")
         self.label_27.setFont(font6)
 
-        self.gridLayout_9.addWidget(self.label_27, 2, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.label_27, 3, 0, 1, 1)
 
         self.spinBox_3 = QSpinBox(self.Entregas)
         self.spinBox_3.setObjectName(u"spinBox_3")
 
-        self.gridLayout_9.addWidget(self.spinBox_3, 2, 1, 1, 1)
+        self.gridLayout_9.addWidget(self.spinBox_3, 3, 1, 1, 1)
+
+        self.label_33 = QLabel(self.Entregas)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setFont(font6)
+
+        self.gridLayout_9.addWidget(self.label_33, 4, 0, 1, 1)
+
+        self.lineEdit_10 = QLineEdit(self.Entregas)
+        self.lineEdit_10.setObjectName(u"lineEdit_10")
+
+        self.gridLayout_9.addWidget(self.lineEdit_10, 4, 1, 1, 1)
 
         self.label_28 = QLabel(self.Entregas)
         self.label_28.setObjectName(u"label_28")
         self.label_28.setFont(font6)
 
-        self.gridLayout_9.addWidget(self.label_28, 3, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.label_28, 5, 0, 1, 1)
 
         self.dateEdit = QDateEdit(self.Entregas)
         self.dateEdit.setObjectName(u"dateEdit")
 
-        self.gridLayout_9.addWidget(self.dateEdit, 3, 1, 1, 1)
+        self.gridLayout_9.addWidget(self.dateEdit, 5, 1, 1, 1)
 
         self.pushButton_5 = QPushButton(self.Entregas)
         self.pushButton_5.setObjectName(u"pushButton_5")
 
-        self.gridLayout_9.addWidget(self.pushButton_5, 4, 0, 1, 2)
+        self.gridLayout_9.addWidget(self.pushButton_5, 6, 0, 1, 2)
 
 
-        self.gridLayout_10.addLayout(self.gridLayout_9, 1, 0, 1, 1)
-
-
-        self.gridLayout_15.addLayout(self.gridLayout_10, 0, 0, 1, 1)
+        self.gridLayout_10.addLayout(self.gridLayout_9, 0, 0, 1, 1)
 
         self.stackedWidget.addWidget(self.Entregas)
         self.Reportes = QWidget()
@@ -718,7 +724,7 @@ class Ui_SistemaGestionInventarios(object):
 
         self.retranslateUi(SistemaGestionInventarios)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(SistemaGestionInventarios)
@@ -742,7 +748,7 @@ class Ui_SistemaGestionInventarios(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Inventarios permite ingresar unidades de stock y consultar stock disponible por bodega.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:10pt;\">* M\u00f3dulo de Bodegas permite registrar nuevas b\u00f3"
                         "degas.</span></p>\n"
@@ -865,6 +871,7 @@ class Ui_SistemaGestionInventarios(object):
 
         self.label_26.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Distribuidor", None))
         self.label_27.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Unidades", None))
+        self.label_33.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Num. Rastreo", None))
         self.label_28.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Fecha Entrega", None))
         self.pushButton_5.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Registrar Entrega", None))
         self.pushButton_6.setText(QCoreApplication.translate("SistemaGestionInventarios", u"Generar Reporte", None))

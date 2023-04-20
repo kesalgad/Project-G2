@@ -4,6 +4,7 @@ from ui import Ui_SistemaGestionInventarios
 from Inventarios import RegistroInventarios, ConsultaInventarios
 from Bodegas import *
 from Distribuidores import *
+from Entregas import *
 
 
 class AppInventario(QMainWindow):
@@ -13,11 +14,12 @@ class AppInventario(QMainWindow):
         self.ui = Ui_SistemaGestionInventarios()
         self.ui.setupUi(self)
 
-        # Instantiate classes
+        # Se instancian clases
         self.registro_inventarios = RegistroInventarios(self.ui)
         self.consulta_inventarios = ConsultaInventarios(self.ui, self.registro_inventarios)
         self.crear_bodega = CrearBodega(self.ui)
         self.crear_distribuidor = PerfilDistribuidor(self.ui)
+        self.ingresar_entrega = Entregas(self.ui)
 
         self.show()
 
