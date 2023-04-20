@@ -53,3 +53,30 @@ class Entregas:
         
         # Imprimir el total de items entregados por product_code
         print(self.items_entregados)
+
+import os
+
+class Reportes:
+    def __init__(self, entregas_data, ui):
+        # Referenciar elementos del UI
+        self.pushButton_6 = ui.pushButton_6
+        # Boton para enviar datos
+        self.pushButton_6.clicked.connect(self.exportar_a_txt)
+        # Guardar los datos de entregas en una variable de instancia
+        self.entregas_data = entregas_data
+        
+    def exportar_a_txt(self):
+        # Generar la ruta del archivo de texto en la misma carpeta del script
+        file_path = os.path.join(os.getcwd(), "entregas.txt")
+        # Crear un archivo de texto y escribir los datos de entregas en él
+        with open(file_path, "w") as f:
+            for entrega in self.entregas_data:
+                f.write("Product Code: {}\n".format(entrega["product_code"]))
+                f.write("Distribuidor: {}\n".format(entrega["distribuidor"]))
+                f.write("Unidades: {}\n".format(entrega["unidades"]))
+                f.write("Número de Rastreo: {}\n".format(entrega["numRastreo"]))
+                f.write("Fecha de Entrega: {}\n\n".format(entrega["fechaEntrega"]))
+                
+        # Imprimir mensaje de éxito en consola
+        print("Los datos de entregas han sido exportados a entregas.txt.")
+

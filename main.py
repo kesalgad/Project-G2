@@ -4,7 +4,7 @@ from ui import Ui_SistemaGestionInventarios
 from Inventarios import RegistroInventarios, ConsultaInventarios
 from Bodegas import CrearBodega
 from Distribuidores import PerfilDistribuidor
-from Entregas import Entregas
+from Entregas import Entregas, Reportes
 
 
 class AppInventario(QMainWindow):
