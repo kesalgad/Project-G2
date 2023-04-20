@@ -97,7 +97,7 @@ class Reportes:
             writer = csv.writer(f)
             
             # Write the header row
-            writer.writerow(["Product Code", "Distribuidor", "Unidades", "Número de rastreo", "Fecha de entrega"])
+            writer.writerow(["Product Code", "Distribuidor", "Unidades", "Num de rastreo", "Fecha de entrega"])
             
             # Write the data rows
             for entrega in self.entregas_data:
